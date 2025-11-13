@@ -1,0 +1,15 @@
+import { initWalletConnect } from './walletconnect.js';
+
+async function startSequencer() {
+  console.log('Starting Aztec Sequencer Node...');
+  // Basit sequencer simülasyonu (gerçek Aztec.js ile genişletilebilir)
+  console.log('Sequencer running on localhost:8080');
+  
+  // WalletConnect'i başlat
+  await initWalletConnect();
+  
+  // Sürekli çalış (Ctrl+C ile durdur)
+  process.stdin.resume();
+}
+
+startSequencer().catch(console.error);

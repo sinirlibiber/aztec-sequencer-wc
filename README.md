@@ -55,7 +55,8 @@ git clone https://github.com/gumusbase/aztec-sequencer-wc.git
 cd aztec-sequencer-wc
 npm install
 
-2. Setup Environment
+---
+### 2. Setup Environment
 cp .env.example .env
 
 Edit .env:

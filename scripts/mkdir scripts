@@ -1,0 +1,18 @@
+import { ethers } from "hardhat";
+
+async function main() {
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contracts with the account:", deployer.address);
+
+  const XPTracker = await ethers.getContractFactory("XPTracker");
+  const xpTracker = await XPTracker.deploy();
+
+  await xpTracker.waitForDeployment();
+
+  console.log("XPTracker deployed to:", await xpTracker.getAddress());
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

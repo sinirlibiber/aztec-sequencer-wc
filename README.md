@@ -1,6 +1,6 @@
 # Aztec Sequencer Node + WalletConnect v2 Integration
 
-![Aztec + WalletConnect](https://i.imgur.com/0xABCDE.png)
+![Aztec + WalletConnect](https://walletconnect.com/icon.png?14b0dfc4ce526451)
 
 **A fully functional Aztec Network Sequencer Node with WalletConnect v2 integration and on-chain XP rewards.**
 
@@ -75,5 +75,5 @@ PRIVATE_KEY=your_deployer_private_key_for_testnet
 
  Open http://localhost:5173 → Click Connect → Approve in wallet → Earn 100 XP on-chain!
 
- 
+ cast call 0xYourContractAddress "xp(address)(uint256)" 0xYourWallet --rpc-url https://rpc.testnet.aztec.network
 
